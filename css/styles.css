@@ -58,14 +58,17 @@
 
 .banner {
     background-image: url("/assets/background.png");
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 6px #00000029;
-    padding: 326px;
+    padding-top: 300px;
+    padding-bottom: 200px;
 }
 
 
@@ -75,6 +78,7 @@
     font-size: 49px;
     letter-spacing: 0;
     color: #000;
+    padding-top: 130px;
     padding-bottom: 20px;
 }
 .banner-text {
@@ -100,5 +104,96 @@
     letter-spacing: 0;
     color: #fff;
     text-decoration: none;
+}
+
+/*stylowanie sekcji statistic*/
+
+.statistic {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0;
+    background: #fff;
+    box-shadow: 0 -5px 80px #00000029;
+}
+
+.statistic-title {
+    font-size: 36px;
+    padding-top: 100px;
+}
+
+.statistic-container {
+    margin: 0 auto;
+    max-width: 1352px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.statistic-content {}
+.statistic-photo-box-1 {
+    position: relative;
+}
+
+.statistic-photo-img {
+    position: relative;
+    z-index: 1;
+    padding-left: 15px;    
+}
+
+.statistic-photo-box-1::after {
+    content: "";
+    display: block;
+    width: 62px;
+    height: 62px;
+    background: #FB3B64;
+    border-radius: 50%;
+    position: absolute;
+    top: -16%;
+    left: 5%;
+}
+
+.statistic-photo-box-2 {
+    position: relative;
+}
+
+.statistic-photo-box-2::after {
+    content: "";
+    display: block;
+    width: 62px;
+    height: 62px;
+    background: #08A6E4;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -22%;
+    left: 26%;
+}
+
+.statistic-photo-box-3 {
+    position: relative;
+}
+
+.statistic-photo-box-3::after {
+    content: "";
+    display: block;
+    width: 62px;
+    height: 62px;
+    background: #55DFB4;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10%;
+    left: 15%;
+}
+
+.statistic-content-numbers {
+    letter-spacing: 6px;
+    font-weight: 800;
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+.statistic-content-text {
+    color: #A5A5A5;
+    font-size: 16px;
 
 }
