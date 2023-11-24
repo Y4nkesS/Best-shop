@@ -311,6 +311,7 @@
     --line-color: #55DFB4;
     display: flex;
     background: 0;
+    border: none;
 
 }
 .benefits-third-article-content {
@@ -318,7 +319,7 @@
     max-width: 620px;
     height: 100%;
     margin: 0;
-
+    border: 1px solid #E8E9ED;
 }
 
 .benefits-photo-trumpet {
