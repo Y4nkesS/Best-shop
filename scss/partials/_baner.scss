@@ -1,0 +1,47 @@
+/* stylowanie sekcji banner*/
+
+
+.banner {
+  background: $color-wht;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.banner-title {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 49px;
+  letter-spacing: 0;
+  color: #000;
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+
+.banner-text {
+  text-align: center;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #000;
+  padding-bottom: 38px;
+}
+
+.banner-button {
+  background: $color-blue;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 40px;
+  padding: 22px 157px 23px;
+}
+
+.banner-button a {
+  text-align: center;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  color: $color-wht;
+  text-decoration: none;
+}

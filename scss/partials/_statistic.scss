@@ -1,0 +1,93 @@
+
+
+/* stylowanie sekcji statistic*/
+
+
+.statistic {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0;
+  background: $color-wht;
+  box-shadow: 0 -5px 80px #00000029;
+}
+
+.statistic-title {
+  font-size: 36px;
+  padding-top: 100px;
+}
+
+.statistic-container {
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  gap: 200px;
+}
+
+.statistic-photo-box-1 {
+  position: relative;
+}
+
+.statistic-photo-img {
+  position: relative;
+  z-index: 1;
+  padding-left: 15px;
+}
+
+.statistic-photo-box-1::after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 62px;
+  background: $color-red;
+  border-radius: 50%;
+  position: absolute;
+  top: -16%;
+  left: 5%;
+}
+
+.statistic-photo-box-2 {
+  position: relative;
+}
+
+.statistic-photo-box-2::after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 62px;
+  background: $color-blue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -22%;
+  left: 26%;
+}
+
+.statistic-photo-box-3 {
+  position: relative;
+}
+
+.statistic-photo-box-3::after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 62px;
+  background: $color-green;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10%;
+  left: 15%;
+}
+
+.statistic-content-numbers {
+  letter-spacing: 6px;
+  font-weight: 800;
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
+
+.statistic-content-text {
+  color: $text-color-grey;
+  font-size: 16px;
+
+}
+

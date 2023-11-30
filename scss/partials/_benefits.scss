@@ -1,0 +1,143 @@
+
+/* stylowanie sekcji benfits*/
+
+
+.benefits {
+  padding: 100px 0;
+  background-color: #F7F7F7;
+}
+
+.benefits-container {
+  max-width: 1200px;
+  flex-direction: column;
+}
+
+.benefits-article {
+  background: $color-wht;
+  border: 1px solid #E8E9ED;
+  margin-bottom: 37px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.benefits-content {
+  max-width: 415px;
+  padding: 90px 36px;
+  letter-spacing: 0;
+}
+
+.benefits-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.benefits-text {
+  font-family: "Open Sans", serif;
+  padding-top: 30px;
+}
+
+.benefits-text::after {
+  content: "";
+  width: 332px;
+  height: 4px;
+  background: var(--line-color);
+  display: block;
+  margin-top: 50px;
+}
+
+.benefits-photo {
+  display: flex;
+}
+
+.benefits-first-article {
+  --line-color: $color-red;
+}
+
+.benefits-photo-laptop {
+  padding-right: 117px;
+  padding-bottom: 38px;
+  position: relative;
+}
+
+.benefits-img-laptop {
+  width: 387px;
+  height: auto;
+  position: relative;
+}
+
+.benefits-photo-laptop::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background-color: $color-red;
+  display: block;
+  border-radius: 40px;
+  position: absolute;
+  left: 45%;
+  top: -20%;
+  transform: rotate(45deg);
+}
+
+.benefits-second-article {
+  --line-color: #07ACE6;
+}
+
+.benefits-photo-phone {
+  order: -1;
+  position: relative;
+  padding-left: 70px;
+}
+
+.benefits-img-phone {
+  position: relative;
+  width: 426px;
+  height: auto;
+}
+
+.benefits-photo-phone::before {
+  content: "";
+  width: 320px;
+  height: 320px;
+  background-color: #07ACE6;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  right: 25%;
+  top: -5%;
+}
+
+.benefits-third-article {
+  --line-color: $color-green;
+  display: flex;
+  background: 0;
+  border: none;
+
+}
+
+.benefits-third-article-content {
+  background: $color-wht;
+  max-width: 620px;
+  height: auto;
+  margin: 0;
+  border: 1px solid #E8E9ED;
+}
+
+.benefits-photo-trumpet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  flex-grow: 1;
+  background: $color-green;
+  margin-left: 60px;
+}
+
+.benefits-img-trumpet {
+  width: 295px;
+  height: auto;
+  padding: 89px 0;
+}
