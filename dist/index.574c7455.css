@@ -48,6 +48,13 @@ body {
   display: flex;
 }
 
+@media (width < 1352px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
 .header {
   background: #fff;
   box-shadow: 0 3px 6px #00000029;
@@ -382,6 +389,7 @@ body {
   align-items: center;
   gap: 60px;
   padding: 100px 0;
+  display: flex;
 }
 
 .pricing-box-basic {
@@ -391,6 +399,10 @@ body {
 .pricing-box-basic .pricing-box-button {
   background: #fb3b64;
   box-shadow: 0 0 8px #fb3b64;
+}
+
+.pricing-box-basic .pricing-box-cost {
+  color: #fb3b64;
 }
 
 .pricing-box {
@@ -484,6 +496,10 @@ body {
   box-shadow: 0 0 8px #07ace6;
 }
 
+.pricing-box-professional .pricing-box-cost {
+  color: #07ace6;
+}
+
 .pricing-box-premium {
   border: 1px solid #55dfb4;
 }
@@ -491,6 +507,33 @@ body {
 .pricing-box-premium .pricing-box-button {
   background: #55dfb4;
   box-shadow: 0 0 8px #55dfb4;
+}
+
+.pricing-box-premium .pricing-box-cost {
+  color: #55dfb4;
+}
+
+@media (width < 1300px) {
+  .pricing-container {
+    flex-direction: column;
+  }
+
+  .pricing-box {
+    width: 293px;
+    height: auto;
+    padding: 5px 11px;
+  }
+
+  .pricing-box-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .pricing-box-main {
+    padding-left: 20px;
+    padding-right: 46px;
+  }
 }
 
 .contact-form-box {

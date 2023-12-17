@@ -12,3 +12,10 @@ body {
   display: flex;
   max-width: 1352px;
 }
+
+@media (width < 1352px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}

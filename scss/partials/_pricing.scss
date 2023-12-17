@@ -19,6 +19,7 @@
 }
 
 .pricing-container {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
@@ -32,7 +33,9 @@
     background: $box-color;
     box-shadow: 0 0 8px $box-color;
   }
-
+  .pricing-box-cost {
+    color: $box-color;
+  }
 }
 
 .pricing-box {
@@ -124,12 +127,14 @@
   .pricing-box-button {
     background: $box-color;
     box-shadow: 0 0 8px $box-color;
+    top: 104px;
+  }
+  .pricing-box-cost {
+    color: $box-color;
   }
 }
 
-.pricing-box-professional .pricing-box-button {
-  top: 104px;
-}
+
 
 .pricing-box-premium {
   $box-color: $color-green;
@@ -138,6 +143,59 @@
   .pricing-box-button {
     background: $box-color;
     box-shadow: 0 0 8px $box-color;
+  }
+  .pricing-box-cost {
+    color: $box-color;
+  }
+}
+
+@media (width < 1300px) {
+  .pricing-container {
+    flex-direction: column;
+  }
+  .pricing-box {
+    width: 293px;
+    height: auto;
+    padding: 5px 11px;
+  }
+  //.pricing-box-content {
+  //  display: grid;
+  //  grid-template-columns: repeat(1fr, 2fr);
+  //  grid-template-rows: repeat(3, 1fr);
+  //  grid-template-areas:
+  //  "item1 item2"
+  //  "item3 item2"
+  //  "item4 item2"
+  //;
+  //}
+  //.pricing-box-title {
+  //  grid-area: item1;
+  //  display: flex;
+  //  justify-content: center;
+  //  align-items: end;
+  //}
+  //.pricing-box-cost {
+  //  grid-area: item3;
+  //}
+  //.pricing-box-limited {
+  //  grid-area: item4;
+  //}
+  //.pricing-box-list {
+  //  grid-area: item2;
+  //  display: flex;
+  //  flex-direction: column;
+  //  justify-content: start;
+  //  align-items: center;
+  //
+  //}
+  .pricing-box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing-box-main {
+    padding-right: 46px;
+    padding-left: 20px;
   }
 }
 
