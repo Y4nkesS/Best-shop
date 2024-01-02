@@ -388,27 +388,78 @@ body {
   }
 
   .benefits-article {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 20px 0;
+  }
+
+  .benefits-content {
+    padding: 50px 36px;
   }
 
   .benefits-second-article .benefits-content {
     padding-top: 30px;
   }
 
-  .benefits-photo {
-    padding: 0 0 40px;
+  .benefits-photo-laptop {
+    padding-top: 30px;
+    padding-right: 0;
+  }
+
+  .benefits-photo-laptop:before {
+    top: 5%;
+    left: 56%;
+  }
+
+  .benefits-photo-phone {
+    padding-bottom: 50px;
+  }
+
+  .benefits-photo-phone:before {
+    top: 10%;
+    right: 19%;
   }
 
   .benefits-photo-trumpet {
     margin: 0;
     padding-left: 90px;
     padding-right: 90px;
+  }
+}
+
+@media (width < 600px) {
+  .benefits-container {
+    padding: 0 10px;
+  }
+
+  .benefits-img-laptop {
+    width: 200px;
+    height: auto;
+  }
+
+  .benefits-content {
+    padding: 30px 20px;
+  }
+
+  .benefits-img-phone {
+    width: 175px;
+    height: auto;
+  }
+
+  .benefits-photo-laptop:before {
+    width: 131px;
+    height: 131px;
+    left: 30%;
+  }
+
+  .benefits-photo-phone:before {
+    width: 131px;
+    height: 131px;
+    top: 15%;
+    right: 25%;
   }
 }
 
