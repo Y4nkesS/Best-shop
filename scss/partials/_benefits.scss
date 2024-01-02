@@ -141,3 +141,33 @@
   height: auto;
   padding: 89px 0;
 }
+
+@media (width < 1000px) {
+  .benefits-container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .benefits-article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px ;
+    padding-right: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .benefits-second-article {
+    & .benefits-content {
+      padding-top: 30px;
+    }
+  }
+  .benefits-photo {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .benefits-photo-trumpet {
+    margin: 0;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}

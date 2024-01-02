@@ -230,6 +230,18 @@ body {
   font-size: 16px;
 }
 
+@media (width < 1000px) {
+  .statistic-container {
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+  }
+
+  .statistic-title {
+    padding: 36px;
+  }
+}
+
 .benefits {
   background-color: #f7f7f7;
   padding: 100px 0;
@@ -367,6 +379,37 @@ body {
   width: 295px;
   height: auto;
   padding: 89px 0;
+}
+
+@media (width < 1000px) {
+  .benefits-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .benefits-article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .benefits-second-article .benefits-content {
+    padding-top: 30px;
+  }
+
+  .benefits-photo {
+    padding: 0 0 40px;
+  }
+
+  .benefits-photo-trumpet {
+    margin: 0;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 
 .pricing {
